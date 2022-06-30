@@ -1,6 +1,6 @@
 import React from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import Card from "./atoms/card";
+import Card from "./card";
 
 function Home() {
   return (
