@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import MessageScreen from "./components/messageScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex w-6/6 h-screen size-100% ">
+      <div className="bg-[#0E1519] w-3/12 h-6/6"></div>
+      <MessageScreen/>
     </div>
   );
 }
