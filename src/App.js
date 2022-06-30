@@ -1,9 +1,10 @@
 import MessageScreen from "./components/messageScreen";
+import Home from "./components/home";
 
 function App() {
   return (
-    <div className="flex w-6/6 h-screen size-100% ">
-      <div className="bg-[#0E1519] w-3/12 h-6/6"></div>
+    <div className="App flex h-screen">
+      <Home />
       <MessageScreen/>
     </div>
   );
