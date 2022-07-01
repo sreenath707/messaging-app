@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Message from "./mesage.js";
+import ScrollableFeed from "react-scrollable-feed";
 
 function MessageScreenMain() {
   const [messages, setMessages] = useState([
@@ -29,10 +30,12 @@ function MessageScreenMain() {
     { isSender: true, message: "nothing much dude", time: "11.30 pm" },
   ]);
   return (
-    <div className="h-full overflow-y-scroll px-[5%] py-2 ">
-      {messages.map((mess) => (
-        <Message message={mess} />
-      ))}
+    <div className="h-full overflow-y-scroll py-2 ">
+      <ScrollableFeed className="px-[5%]">
+        {messages.map((mess) => (
+          <Message message={mess} />
+        ))}
+      </ScrollableFeed>
     </div>
   );
 }
