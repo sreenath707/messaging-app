@@ -2,7 +2,7 @@ import { useState } from "react";
 import Message from "./mesage.js";
 import ScrollableFeed from "react-scrollable-feed";
 
-function MessageScreenMain() {
+function MessageScreenMain({ dark }) {
   const [messages, setMessages] = useState([
     { isSender: true, message: "hii", time: "11.30 pm" },
     { isSender: false, message: "hey", time: "11.30 pm" },
@@ -33,7 +33,7 @@ function MessageScreenMain() {
     <div className="h-full overflow-y-scroll py-2 ">
       <ScrollableFeed className="px-[5%]">
         {messages.map((mess) => (
-          <Message message={mess} />
+          <Message dark={dark} message={mess} />
         ))}
       </ScrollableFeed>
     </div>
